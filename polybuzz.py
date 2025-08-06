@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 # Récupère la clé API (optionnelle)
-API_KEY = st.secrets.get("api_key", None)
+API_KEY = st.secrets.get("API_KEY", None)
 USE_IA = API_KEY is not None
 
 # Configuration de la page
@@ -86,3 +86,4 @@ if st.button("✅ Valider mes réponses"):
 # Footer
 st.markdown("---")
 st.caption("🛠️ Quiz créé avec Streamlit + IA Groq (optionnelle)")
+
